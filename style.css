@@ -1,0 +1,369 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.header nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    background-color: #5A72A0;
+    position: fixed;
+    z-index: 999;
+}
+.header nav button{
+    background-color: #FDFFE2;
+    margin-left: 80px;
+    margin-right: 80px;
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: 900;
+    border: 2px solid black;
+    transition: 0.8s;
+}
+.header nav button a{
+    text-decoration: none;
+    color: black;
+}
+.header nav button:hover{
+  transform: scale(1.1);
+  background-color: black;
+  a{
+    color: #FDFFE2;
+  }
+}
+#hero{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    background: linear-gradient(300deg, #83B4FF, #FDFFE2, #5A72A0);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+}
+h1{
+    font-size: 110px;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 10px;
+    margin-top: 60px;
+}
+#hero h2{
+    font-size: 50px;
+    text-transform: lowercase;
+    font-weight: 100;
+    letter-spacing: 5px;
+} 
+#hero img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 10px solid black;
+}
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+#about-me{
+  padding-top: 80px;
+  width: 100%;
+  height: 90vh;
+  background-color: #FDFFE2;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+#about-me h2{
+  font-size: 35px;
+  letter-spacing: 2px;
+  font-weight: 900;
+  margin-top: 50px;
+}
+#about-me .aboutme{
+  background-color: #5a72a041;
+  width: 800px;
+  height: 120px;
+  border-radius: 20px;
+  box-shadow: 5px 10px rgb(128, 128, 128);
+  text-indent: 30px;
+  word-break: break-all;
+  line-height: 25px;
+  padding: 20px 30px;
+  margin-top: 20px;
+}
+#about-me div p{
+  font-size: 20px;
+}
+.skills{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-around;
+}
+.skills div{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.skills div img{
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+.skills div h3{
+  margin-top: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+}
+#projects{
+  padding-top: 100px;
+  width: 100%;
+  height: 90vh;
+  background-color: #FDFFE2;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+#projects h2{
+  font-size: 35px;
+  letter-spacing: 2px;
+  font-weight: 900;
+  margin-top: 50px;
+}
+.projects-container{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  height: 90%;
+  width: 100%;
+}
+.projects-container div{
+  width: 30%;
+  height: 70%;
+  background-color: #5a72a041;
+  border-radius: 20px;
+  box-shadow: 5px 10px rgb(128, 128, 128);
+  transition: 0.8s;
+}
+#projects div div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  padding: 10px 20px;
+  font-weight: bolder;
+}
+#projects div div img{
+  margin-top: 30px;
+  height: 200px;
+  width: 300px;
+
+}
+.projects-container div:hover{
+  transform: scale(1.1);
+}
+#contact{
+  width: 100%;
+  height: 50vh;
+  background-color:#FDFFE2 ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#contact > div{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+#contact h2{
+  font-size: 35px;
+  letter-spacing: 2px;
+  font-weight: 900;
+}
+#contact div div{
+  width: 30%;
+  height: 70%;
+  background-color: #5a72a041;
+  border-radius: 20px;
+  box-shadow: 5px 10px rgb(128, 128, 128);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: 0.8s;
+}
+#contact div div h3{
+  font-size: 30px;
+}
+#contact div div p{
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+#contact div div a{
+  color: black;
+  text-decoration: none;
+}
+footer{
+  width: 100%;
+    height: 20vh;
+    background-color: #5A72A0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#contact > div div:hover{
+  transform: scale(1.1);
+}
+footer .social-media{
+  display: flex;
+  gap: 30px;
+  margin-top: 40px;
+}
+.social-media div svg{
+  color: black;
+}
+.social-media div svg{
+  border-radius: 50%;
+}
+address{
+  margin-top: 20px;
+}
+@media (max-width : 680px){
+  .header nav button{
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px 10px;
+}
+h1{
+  font-size: 70px;
+  letter-spacing: 5px;
+}
+#hero h2{
+  font-size: 30px;
+  letter-spacing: 2px;
+} 
+#hero img{
+  width: 180px;
+  height: 180px;
+  border: 5px solid black;
+}
+#about-me{
+  padding-top: 30px;
+}
+#about-me h2{
+  font-size: 30px;
+}
+#about-me .aboutme{
+  width: 100%;
+  height: 300px;
+  text-indent: 20px;
+  line-height: 25px;
+  padding: 10px 20px;
+  margin-top: 2px;
+}
+#about-me div p{
+  font-size: 17px;
+}
+.skills{
+  flex-direction: column;
+}
+.skills div{
+  margin-top: 15px;
+}
+.skills div img{
+  height: 80px;
+  width: 80px;
+}
+.skills div h3{
+  margin-top: 20px;
+  font-size: 13px;
+}
+#projects{
+  padding-top: 25px;
+  height: 100vh;
+}
+#projects h2{
+  font-size: 30px;
+}
+.projects-container{
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+  gap: 20px;
+}
+.projects-container div{
+  width: 80%;
+  height: 29%;
+}
+#projects div div{
+  padding: 5px 10px;
+}
+#projects div div h3{
+  font-size: 18px;
+}
+#projects div div img{
+  margin-top: 10px;
+  height: 130px;
+  width: 200px;
+}
+#contact{
+  height: 80vh;
+}
+#contact > div{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+#contact h2{
+  margin-top: 80px;
+  font-size: 30px;
+}
+#contact div div{
+  width: 80%;
+  height: 30%;
+}
+#contact div div h3{
+  font-size: 20px;
+}
+footer{
+    height: 15vh;
+}
+footer .social-media{
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+address{
+  margin-top: 10px;
+}
+}
